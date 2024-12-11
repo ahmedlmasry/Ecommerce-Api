@@ -18,7 +18,7 @@ Route::group(['prefix' => 'v1'], function () {
 Route::group(['middleware' => 'auth:api'], function () {
     Route::post('new-order', [MainController::class, 'newOrder']);
     Route::get('my-orders', [MainController::class, 'myOrders']);
-    Route::post('edit-orders', [MainController::class, 'editOrders']);
+
 });
 
 });
